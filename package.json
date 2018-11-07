@@ -1,0 +1,30 @@
+{
+  "name": "@amindunited/copy-file",
+  "version": "0.0.0",
+  "description": "Copies a given file to a given destination",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html mocha './src/**/*.test.js' --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amindunited/copy-file.git"
+  },
+  "keywords": [
+    "Node",
+    "Javascript",
+    "copy",
+    "file"
+  ],
+  "author": "amindunited",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amindunited/copy-file/issues"
+  },
+  "homepage": "https://github.com/amindunited/copy-file#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
