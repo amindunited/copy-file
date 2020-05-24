@@ -1,6 +1,6 @@
 {
   "name": "@amindunited/copy-file",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Copies a given file to a given destination",
   "main": "index.js",
   "scripts": {
