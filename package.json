@@ -1,6 +1,6 @@
 {
   "name": "@amindunited/copy-file",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Copies a given file to a given destination",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "homepage": "https://github.com/amindunited/copy-file#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0"
+    "mocha": "^7.2.0",
+    "nyc": "^15.0.1"
   }
 }
