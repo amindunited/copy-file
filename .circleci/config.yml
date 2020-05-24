@@ -7,7 +7,7 @@ version: 2
 defaults: &defaults
   working_directory: ~/repo
   docker:
-    - image: circleci/node:8.11.1
+    - image: circleci/node:12.16.3
 
 jobs:
   test:
@@ -41,7 +41,7 @@ jobs:
           at: ~/repo
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=" > ~/repo/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
       - run:
           name: Publish package
           command: npm publish
@@ -55,11 +55,14 @@ workflows:
             tags:
               only: /^v.*/
       - deploy:
+          context: AMINDUNITED
           requires:
             - test
           filters:
             tags:
               only: /^v.*/
             branches:
+              only:
+                - master
               ignore: /.*/
 
